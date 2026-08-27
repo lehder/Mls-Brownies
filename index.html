@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lorena Núñez | Haute Pâtisserie & Bakery</title>
+  <!-- Google Fonts & FontAwesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- HEADER MODERNO Y MINIMALISTA -->
+  <header id="header">
+    <nav class="navbar">
+      <a href="#" class="brand-logo">
+        <span class="logo-accent">LORENA NÚÑEZ</span>
+        <!-- <span class="logo-sub">HAUTE PÂTISSERIE</span> -->
+
+        <div class="logo">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" class="logo-svg">
+        <!-- Fondo Circular con Borde -->
+        <circle cx="150" cy="150" r="140" fill="#ffffff" stroke="#2b1a17" stroke-width="6"/>
+        <circle cx="150" cy="150" r="134" fill="none" stroke="#2b1a17" stroke-width="2" stroke-dasharray="4 4"/>
+
+        <!-- Texto Curvo Superior: ML'S BROWNIES -->
+        <path id="curve" fill="transparent" d="M 40,150 A 110,110 0 1,1 260,150" />
+        <text font-family="'Fredoka', 'Caveat', cursive, sans-serif" font-size="28" font-weight="bold" fill="#2b1a17" letter-spacing="2">
+            <textPath href="#curve" startOffset="50%" text-anchor="middle">
+                ML'S BROWNIES
+            </textPath>
+        </text>
+
+        <!-- Ilustración Central (Pastel/Brownie) -->
+        <g transform="translate(95, 105)">
+            <!-- Cobertura / Merengue -->
+            <path d="M 20 40 Q 30 25 40 40 Q 55 20 70 40 Q 85 25 95 40 L 90 50 L 25 50 Z" fill="#4a2c27" stroke="#2b1a17" stroke-width="3" stroke-linejoin="round"/>
+            <!-- Frutilla/Cereza arriba -->
+            <path d="M 55 25 Q 60 10 55 5 Q 50 10 55 25 Z" fill="#d94e4e" stroke="#2b1a17" stroke-width="2"/>
+            <circle cx="55" cy="27" r="8" fill="#d94e4e" stroke="#2b1a17" stroke-width="2"/>
+            <!-- Capas del pastel -->
+            <rect x="20" y="50" width="70" height="35" rx="5" fill="#6f4e37" stroke="#2b1a17" stroke-width="3"/>
+            <!-- Relleno central -->
+            <line x1="20" y1="68" x2="90" y2="68" stroke="#ffffff" stroke-width="4"/>
+            <!-- Detalle de la crema flotante -->
+            <path d="M 25 50 Q 35 60 45 50 Q 55 60 65 50 Q 75 60 85 50" fill="none" stroke="#ffffff" stroke-width="3"/>
+        </g>
+
+        <!-- Texto Inferior: PASTELERÍA -->
+        <text x="150" y="215" font-family="'Montserrat', sans-serif" font-size="14" font-weight="600" fill="#6f4e37" letter-spacing="4" text-anchor="middle">
+            PASTELERÍA
+        </text>
+
+        <!-- Redes / Teléfono -->
+        <text x="150" y="245" font-family="'Montserrat', sans-serif" font-size="10" fill="#2b1a17" text-anchor="middle">
+            📷 @mls_brownies  |  📞 098 331 996
+        </text>
+    </svg>
+</div>
+        
+
+
+      </a>
+
+      <ul class="nav-menu">
+        <li><a href="#inicio" class="active">Inicio</a></li>
+        <li><a href="#menu">Colección</a></li>
+        <li><a href="#nosotros">Filosofía</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="https://wa.me/" target="_blank" class="btn-whatsapp">
+          <i class="fab fa-whatsapp"></i> <span>Encargar</span>
+        </a>
+        <button class="mobile-toggle" id="mobile-menu-btn" aria-label="Menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION CON CONCEPTO ABSTRACTO Y MODERNO -->
+  <section id="inicio" class="hero-section">
+    <div class="hero-container">
+      <div class="hero-text">
+        <span class="tag-label">Alta Repostería Artesanal</span>
+        <h1>El arte de transformar <em>la dulzura</em> en momentos inolvidables.</h1>
+        <p>Una fusión de técnica refinada, ingredientes de origen premium y diseños exclusivos creados por Lorena Núñez para tus celebraciones más importantes.</p>
+        <div class="hero-cta">
+          <a href="#menu" class="btn-main">Descubrir Colección</a>
+          <a href="#nosotros" class="btn-text"><i class="fas fa-play"></i> Nuestra Historia</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="visual-card">
+          <div class="image-wrapper">
+            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=1000&q=80" alt="Cake Artesanal de Diseño">
+          </div>
+          <div class="floating-badge">
+            <span class="number">100%</span>
+            <span class="desc">Recetas de Autor</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN DE CATEGORÍAS & MENÚ CON FILTROS DINÁMICOS -->
+  <section id="menu" class="collection-section">
+    <div class="section-header">
+      <span class="section-subtitle">NUESTRA COLECCIÓN</span>
+      <h2>Creaciones de Autor</h2>
+      <p>Explora nuestras categorías exclusivas elaboradas diariamente en nuestro taller.</p>
+    </div>
+
+    <!-- Filtros de JS -->
+    <div class="filter-tabs">
+      <button class="filter-btn active" data-filter="all">Todos</button>
+      <button class="filter-btn" data-filter="cakes">Cakes & Tortas</button>
+      <button class="filter-btn" data-filter="brownies">Brownie Boxes</button>
+      <button class="filter-btn" data-filter="desserts">Postres de Autor</button>
+    </div>
+
+    <div class="product-grid">
+
+      <!-- Item 1 -->
+      <article class="product-card" data-category="brownies">
+        <div class="card-media">
+          <span class="badge">Bestseller</span>
+          <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=800&q=80" alt="Happy Birthday Brownies Box">
+        </div>
+        <div class="card-details">
+          <div class="card-meta">
+            <span class="category">Para Regalo</span>
+            <span class="rating"><i class="fas fa-star"></i> 5.0</span>
+          </div>
+          <h3>Happy Birthday Brownies Box</h3>
+          <p>Caja gourmet de brownies melosos decorados con ganache, fresas frescas y topper personalizado metálico.</p>
+          <div class="card-footer">
+            <a href="https://wa.me/" target="_blank" class="btn-order">Pedir por WhatsApp <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Item 2 -->
+      <article class="product-card" data-category="cakes">
+        <div class="card-media">
+          <span class="badge">Exclusivo</span>
+          <img src="https://images.unsplash.com/photo-1535141192574-5d4897c13136?auto=format&fit=crop&w=800&q=80" alt="Chocolate & Gold Cake">
+        </div>
+        <div class="card-details">
+          <div class="card-meta">
+            <span class="category">Celebración</span>
+            <span class="rating"><i class="fas fa-star"></i> 5.0</span>
+          </div>
+          <h3>Chocolate & Gold Signature Cake</h3>
+          <p>Torta alta bañada en ganache brillante de cacao amargo, detalles con láminas doradas comestibles y flores.</p>
+          <div class="card-footer">
+            <a href="https://wa.me/" target="_blank" class="btn-order">Pedir por WhatsApp <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Item 3 -->
+      <article class="product-card" data-category="desserts">
+        <div class="card-media">
+          <span class="badge">Edición Limitada</span>
+          <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=80" alt="Cinnamon Roll Velvet">
+        </div>
+        <div class="card-details">
+          <div class="card-meta">
+            <span class="category">Postre Individual</span>
+            <span class="rating"><i class="fas fa-star"></i> 4.9</span>
+          </div>
+          <h3>Cinnamon Roll Cream Velvet</h3>
+          <p>La combinación perfecta entre la calidez de la canela recién molida y un frosting aterciopelado de queso crema.</p>
+          <div class="card-footer">
+            <a href="https://wa.me/" target="_blank" class="btn-order">Pedir por WhatsApp <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Item 4 -->
+      <article class="product-card" data-category="desserts">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=800&q=80" alt="Cheesecake Frutos Rojos">
+        </div>
+        <div class="card-details">
+          <div class="card-meta">
+            <span class="category">Frutal</span>
+            <span class="rating"><i class="fas fa-star"></i> 5.0</span>
+          </div>
+          <h3>Cheesecake de Frutos del Bosque</h3>
+          <p>Base crujiente de galleta artesanal, suave masa horneada y topping fresco de arándanos y frambuesas silvestres.</p>
+          <div class="card-footer">
+            <a href="https://wa.me/" target="_blank" class="btn-order">Pedir por WhatsApp <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Item 5 -->
+      <article class="product-card" data-category="desserts">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?auto=format&fit=crop&w=800&q=80" alt="Tiramisú Espresso">
+        </div>
+        <div class="card-details">
+          <div class="card-meta">
+            <span class="category">Clásico Italiano</span>
+            <span class="rating"><i class="fas fa-star"></i> 4.9</span>
+          </div>
+          <h3>Tiramisú al Espresso</h3>
+          <p>Bizcochos de soletilla embebidos en café espresso intenso, crema mascarpone suave y abundante cacao puro.</p>
+          <div class="card-footer">
+            <a href="https://wa.me/" target="_blank" class="btn-order">Pedir por WhatsApp <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Item 6 -->
+      <article class="product-card" data-category="brownies">
+        <div class="card-media">
+          <span class="badge">Especial Madres</span>
+          <img src="https://images.unsplash.com/photo-1589227365533-cee630bd59bd?auto=format&fit=crop&w=800&q=80" alt="Trio Degustación Madres">
+        </div>
+        <div class="card-details">
+          <div class="card-meta">
+            <span class="category">Caja Regalo</span>
+            <span class="rating"><i class="fas fa-star"></i> 5.0</span>
+          </div>
+          <h3>Trío Degustación ML's</h3>
+          <p>Set de regalo en vaso con tres de nuestras mejores elaboraciones preparado especialmente para homenajear a mamá.</p>
+          <div class="card-footer">
+            <a href="https://wa.me/" target="_blank" class="btn-order">Pedir por WhatsApp <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- SECCIÓN FILOSOFÍA Y SOBRE LORENA -->
+  <section id="nosotros" class="about-section">
+    <div class="about-container">
+      <div class="about-image-wrapper">
+        <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=1000&q=80" alt="Taller de Repostería Lorena Núñez">
+      </div>
+      <div class="about-content">
+        <span class="section-subtitle">SOBRE EL TALLER</span>
+        <h2>Pasión por el detalle y el sabor auténtico</h2>
+        <p>En el atelier de <strong>Lorena Núñez Carvajal</strong> creemos que cada pastel cuenta una historia. No usamos premezclas ni conservantes; cada ingrediente es seleccionado cuidadosamente para garantizar una textura y aroma incomparables.</p>
+        
+        <div class="highlights">
+          <div class="h-item">
+            <i class="fas fa-seedling"></i>
+            <div>
+              <h4>100% Natural</h4>
+              <p>Sin aditivos ni preservantes artificiales.</p>
+            </div>
+          </div>
+          <div class="h-item">
+            <i class="fas fa-gem"></i>
+            <div>
+              <h4>Diseños de Autor</h4>
+              <p>Personalización completa para eventos singulares.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER ELEGANTE -->
+  <footer id="contacto">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="brand-logo light">
+          <span class="logo-accent">LORENA NÚÑEZ</span>
+          <span class="logo-sub">HAUTE PÂTISSERIE</span>
+        </a>
+        <p>Transformando tus mejores momentos con alta repostería artesanal y experiencias dulces memorables.</p>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/people/Lorena-Nu%25C3%25B1ez-Carvajal/100063484969587/?rdid=8vypvraxhgwpWTe6&share_url=https%253A%252F%252Fwww.facebook.com%252Fshare%252F1LfwngN5yB%252F" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://wa.me/" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-nav">
+        <h4>Explorar</h4>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#menu">Colección</a></li>
+          <li><a href="#nosotros">Filosofía</a></li>
+          <li><a href="#contacto">Encargos</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-nav">
+        <h4>Especialidades</h4>
+        <ul>
+          <li><a href="#menu">Brownies Box</a></li>
+          <li><a href="#menu">Tortas de Cumpleaños</a></li>
+          <li><a href="#menu">Cinnamon Rolls</a></li>
+          <li><a href="#menu">Ediciones Especiales</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Contacto Directo</h4>
+        <p><i class="fas fa-map-pin"></i> Taller y Atelier de Pastelería</p>
+        <p><i class="fab fa-whatsapp"></i> WhatsApp Directo (Pedidos)</p>
+        <p><i class="fas fa-envelope"></i> pedidos@lorenanunez.com</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Lorena Núñez Carvajal - Haute Pâtisserie. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
