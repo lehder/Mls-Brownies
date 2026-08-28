@@ -44,25 +44,17 @@ header {
   display: flex; align-items: center; justify-content: space-between;
 }
 
-.brand-logo { text-decoration: none; display: flex; flex-direction: column; }
-.logo-accent { font-family: var(--font-heading); font-size: 1.5rem; font-weight: 700; letter-spacing: 2px; color: var(--color-primary); }
-.logo-sub { font-size: 0.65rem; letter-spacing: 4px; color: var(--color-secondary); font-weight: 600; }
-
-
-.logo-svg {
-    height: 90px; /* Ajusta según el tamaño deseado para tu header */
-    width: auto;
-    transition: transform 0.3s ease;
+.img-logo {
+  height: 180px;
+  width: 180px;
+  border-radius: 50% 50%;
 }
-
-.logo-svg:hover {
-    transform: scale(1.05); /* Efecto suave al pasar el cursor */
-}
-
 /* Para pantallas móviles */
 @media (max-width: 768px) {
-    .logo-svg {
-        height: 65px;
+    .img-logo {
+        height: 150px;
+        width: 150px;
+        border-radius: 50% 50%;
     }
 }
 
@@ -157,6 +149,8 @@ footer { background: var(--color-primary); color: white; padding: 5rem 2rem 2rem
 /* RESPONSIVE */
 @media (max-width: 992px) {
   .hero-container, .about-container { grid-template-columns: 1fr; }
+  .btn-whatsapp { margin-left: -70px; margin-bottom: 20px;}
+  .floating-badge { bottom: -370px;}
   .footer-grid { grid-template-columns: 1fr 1fr; }
   .nav-menu { display: none; }
   .mobile-toggle { display: block; }
