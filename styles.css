@@ -135,7 +135,7 @@ header {
 /* FOOTER */
 footer { background: var(--color-primary); color: white; padding: 5rem 2rem 2rem; }
 .footer-grid { max-width: 1300px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr 1.5fr; gap: 3rem; margin-bottom: 4rem; }
-.footer-brand .brand-logo.light .logo-accent { color: white; }
+.footer-brand .brand-logo.light .logo-accent { color: white; text-decoration: none; opacity: 0.85; opacity: 0.85;}
 .footer-brand p { color: #A8A29E; margin: 1.5rem 0; font-size: 0.95rem; }
 .social-icons { display: flex; gap: 1rem; }
 .social-icons a { width: 40px; height: 40px; border-radius: 50%; background: rgba(255,255,255,0.1); color: white; display: flex; align-items: center; justify-content: center; text-decoration: none; transition: background 0.3s; }
